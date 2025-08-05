@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "I:\\PROJECTS\\voice_replacer\\VRCYapInterceptor\\VRCYapInterceptor\\VRCYapInterceptor.csproj": {}
+  },
+  "projects": {
+    "I:\\PROJECTS\\voice_replacer\\VRCYapInterceptor\\VRCYapInterceptor\\VRCYapInterceptor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "I:\\PROJECTS\\voice_replacer\\VRCYapInterceptor\\VRCYapInterceptor\\VRCYapInterceptor.csproj",
+        "projectName": "VRCYapInterceptor",
+        "projectPath": "I:\\PROJECTS\\voice_replacer\\VRCYapInterceptor\\VRCYapInterceptor\\VRCYapInterceptor.csproj",
+        "packagesPath": "C:\\Users\\Toby\\.nuget\\packages\\",
+        "outputPath": "I:\\PROJECTS\\voice_replacer\\VRCYapInterceptor\\VRCYapInterceptor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Toby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "NDesk.Options": {
+              "target": "Package",
+              "version": "[0.2.1, )"
+            },
+            "Rug.Osc": {
+              "target": "Package",
+              "version": "[1.2.5, )"
+            },
+            "VRChat.OSCQuery": {
+              "target": "Package",
+              "version": "[0.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
