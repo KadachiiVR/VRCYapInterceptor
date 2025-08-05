@@ -15,10 +15,8 @@ namespace VRCYapInterceptor
     {
         static class OSCAddresses
         {
-            //public static string INTERCEPTOR_ENABLED = "/avatar/parameters/YapInterceptor/Enabled";
-            public static string INTERCEPTOR_ENABLED = "/avatar/parameters/VoiceReplace/Enabled";
-            //public static string INTERCEPTOR_INTERCEPTING = "/avatar/parameters/YapInterceptor/Intercepting";
-            public static string INTERCEPTOR_INTERCEPTING = "/avatar/parameters/VoiceReplace/Replacing";
+            public static string INTERCEPTOR_ENABLED = "/avatar/parameters/YapInterceptor/Enabled";
+            public static string INTERCEPTOR_INTERCEPTING = "/avatar/parameters/YapInterceptor/Intercepting";
             public static string INPUT_VOICE = "/input/Voice";
             public static string INPUT_JUMP = "/input/Jump";
             public static string AVATAR_MUTESELF = "/avatar/parameters/MuteSelf";
@@ -111,16 +109,8 @@ namespace VRCYapInterceptor
             };
 
             var extra = p.Parse(args);
-            //var oscq = new OSCQueryService();
-            //oscq.ServerName = "VRC Yap Interceptor";
-            //oscq.AddEndpoint<bool>("/avatar/parameters/YapInterceptor/Enabled", Attributes.AccessValues.WriteOnly);
-            //oscq.AddEndpoint<bool>("/avatar/parameters/YapInterceptor/Intercepting", Attributes.AccessValues.ReadOnly);
-            //oscq.AddEndpoint<bool>("/input/Voice", Attributes.AccessValues.ReadOnly);
-            //oscq.AddEndpoint<bool>("/input/Jump", Attributes.AccessValues.ReadOnly);
-            //oscq.AddEndpoint<bool>("/avatar/parameters/MuteSelf", Attributes.AccessValues.WriteOnly);
-            //oscq.AddEndpoint<bool>("/avatar/parameters/Voice", Attributes.AccessValues.WriteOnly);
 
-            Console.WriteLine("Hello, World!");
+            Console.Clear();
             var instance = Instance;
             instance.windowSize = windowSize;
             //instance.window = new float[instance.windowSize];
@@ -189,7 +179,7 @@ namespace VRCYapInterceptor
 
         public string GetConsoleHeader()
         {
-            return $"VRChat Yap Interceptor\nListening on {this.udpPort}\n(press any key to exit)";
+            return $"VRChat Yap Interceptor\nListening on {this.udpPort} // Window Size: {this.windowSize} // Starts at: {this.startThreshold} // Stops at: {this.stopThreshold}\n(press any key to exit)";
         }
 
         public void Start()
